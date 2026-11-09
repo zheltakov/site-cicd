@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гармония — студия йоги и медитации в Москве</title>
+    <title>Гармония | Йога и медитация в Москве</title>
     <meta name="description" content="Студия йоги и медитации «Гармония» в Москве. Хатха, виньяса, инь-йога, медитация. Первое занятие бесплатно. Запись онлайн.">
-    <meta property="og:title" content="Гармония — студия йоги и медитации">
+    <meta property="og:title" content="Гармония | Йога и медитация в Москве">
     <meta property="og:description" content="Найди гармонию внутри себя. Первое занятие бесплатно.">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="nav-container">
             <a href="#hero" class="logo"><span>🧘</span> Гармония</a>
@@ -27,7 +26,6 @@
             </button>
         </div>
     </nav>
-
     <section class="hero" id="hero">
         <div class="hero-content">
             <h1>Найди <span>гармонию</span><br>внутри себя</h1>
@@ -35,7 +33,6 @@
             <a href="https://t.me/garmonia_yoga" class="btn" target="_blank">Записаться на занятие</a>
         </div>
     </section>
-
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">О студии</h2>
@@ -50,7 +47,6 @@
             </div>
         </div>
     </section>
-
     <section id="classes">
         <div class="container">
             <h2 class="section-title">Направления</h2>
@@ -101,7 +97,6 @@
             </div>
         </div>
     </section>
-
     <section class="promos" id="promos">
         <div class="container">
             <h2 class="section-title">Актуальные предложения</h2>
@@ -124,7 +119,6 @@
             </div>
         </div>
     </section>
-
     <section id="membership">
         <div class="container">
             <h2 class="section-title">Абонементы</h2>
@@ -143,7 +137,6 @@
             </div>
         </div>
     </section>
-
     <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="section-title">Как нас найти</h2>
@@ -167,27 +160,22 @@
             </div>
         </div>
     </section>
-
     <footer>
         © 2025 Студия йоги «Гармония». С любовью к практике и к вам.
     </footer>
-
     <script>
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('navLinks');
-
         burger.addEventListener('click', () => {
             const isOpen = navLinks.classList.toggle('active');
             burger.setAttribute('aria-expanded', isOpen);
         });
-
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 burger.setAttribute('aria-expanded', 'false');
             });
         });
-
         document.addEventListener('click', (e) => {
             if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
                 navLinks.classList.remove('active');
